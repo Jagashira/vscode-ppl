@@ -1,0 +1,25 @@
+{
+  "name": "vscode-ppl",
+  "displayName": "vscode-ppl",
+  "description": "Syntax highlighting and snippets for Pump Programming Language (PPL) used in syringe pumps.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ppl",
+      "aliases": ["Pump Programming Language", "ppl"],
+      "extensions": [".ppl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ppl",
+      "scopeName": "source.ppl",
+      "path": "./syntaxes/ppl.tmLanguage.json"
+    }]
+  }
+}
